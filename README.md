@@ -9,7 +9,7 @@ El código se organiza en la carpeta `src/`, que contiene los siguientes algorit
 * **mandelbrot.py**: Generación del espacio de parámetros para la familia cuadrática $p_c(z) = z^2 + c$. (Figura 4.3)
 * **espacio_parametros.py**: Generación del espacio de parámetros para la familia cúbica genérica $P_a(z) = z(z - 1)(z - a)$. (Figura 4.4)
 * **espacio_parametros_zoom.py**: Generación del espacio de parámetros para la familia cúbica genérica $P_a(z) = z(z - 1)(z - a)$ con zoom en una zona de no convergencia. (Figura 4.5)
-* **Familia_Cubica_Valor_a.py**: Aplicación interactiva que permite la entrada de valores del parámetro de la familia cúbica genérica para la generación de su plano dinámico. (Figura 4.6 y Figura 4.7)
+* **Familia_Cubica_Valor_a.py**: Aplicación interactiva que permite la entrada de valores del parámetro $a \in \mathbb{C}$ de la familia cúbica genérica para la generación de su plano dinámico. (Figura 4.6 y Figura 4.7)
 
 ## ⚙️ Requisitos Técnicos
 
