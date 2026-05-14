@@ -5,7 +5,7 @@ Este repositorio contiene los códigos y herramientas interactivas para el estud
 
 El código se organiza en la carpeta `src/`, que contiene los siguientes algoritmos:
 
-* **`Espacio_Parametros_General.py`**: Aplicación interactiva que permite la entrada de polinomios para la generación de su plano dinámico. (Figura 4.1 y Figura 4.2)
+* **`Plano_Dinamico_General.py`**: Aplicación interactiva que permite la entrada de polinomios para la generación de su plano dinámico. (Figura 4.1 y Figura 4.2)
 * **`mandelbrot.py`**: Generación del espacio de parámetros para la familia cuadrática pc(z) = z2 + c. (Figura 4.3)
 * **`espacio_parametros.py`**: Generación del espacio de parámetros para la familia cúbica genérica Pa(z) = z(z −1)(z −a). (Figura 4.4)
 * **`espacio_parametros_zoom.py`**: Generación del espacio de parámetros para la familia cúbica genérica Pa(z) = z(z −1)(z −a) con zoom en una zona de no convergencia. (Figura 4.5)
