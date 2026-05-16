@@ -42,16 +42,13 @@ def mandelbrot_set_sombreado(resolucion=1000, max_iter=80, escape_radius=2):
 
     interior = mask
 
-    sombreado = 1.0 - (matriz_escape / max_iter)
-
     indices_color = (matriz_escape.astype(int) % 3) + 1
 
     for j in range(1, 4):
         mascara_color = (indices_color == j) & (~interior)
         color = np.array(colores_rgb[j])
         
-        factor = (0.2 + 0.8 * sombreado[mascara_color])[:, np.newaxis]
-        imagen_rgb[mascara_color] = color * factor
+        imagen_rgb[mascara_color] = color
 
 
     return imagen_rgb, (x_min, x_max, y_min, y_max)
