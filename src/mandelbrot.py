@@ -67,5 +67,5 @@ plt.xlabel(r"$Re(c)$", fontsize=14, family='serif')
 plt.ylabel(r"$Im(c)$", fontsize=14, family='serif')
 
 plt.savefig("Figura4.3.png", bbox_inches='tight')
-print("¡Imagen guardada con éxito!")
+print("Imagen guardada")
 plt.show()
