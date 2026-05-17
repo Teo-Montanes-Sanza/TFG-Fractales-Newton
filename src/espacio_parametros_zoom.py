@@ -69,5 +69,5 @@ plt.xlabel(r"$Re(a)$", fontsize=14, family='serif')
 plt.ylabel(r"$Im(a)$", fontsize=14, family='serif')
 
 plt.savefig("Figura4.5.png", bbox_inches='tight', pad_inches=0.05)
-print("¡Imagen con zoom guardada con éxito!")
+print("Imagen con zoom guardada")
 plt.show()
