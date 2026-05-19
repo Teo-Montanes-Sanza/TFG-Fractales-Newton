@@ -159,7 +159,7 @@ def accion_guardar(event):
     fig_save.savefig(nombre_archivo, bbox_inches='tight', pad_inches=0.05)
     plt.close(fig_save)
     
-    ax.set_title(f"¡Imagen guardada como {nombre_archivo}!", family='serif')
+    ax.set_title(f"Imagen guardada como {nombre_archivo}", family='serif')
     fig.canvas.draw_idle()
 
 def mover_a_origen(event):
