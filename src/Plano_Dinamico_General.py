@@ -58,7 +58,7 @@ def calcular_fractal_granular(P_func, dP_func, raices, resolucion=800, max_iter=
     for j, raiz in enumerate(raices):
         matriz_destinos[np.abs(Z - raiz) < 1e-1] = (j % (len(colores_base)-1)) + 1
     imagen_rgb = np.zeros((resolucion, resolucion, 3))
-    sombreado = 1.0 - (matriz_iteraciones / max_iter) 
+    sombreado = (1.0 - (matriz_iteraciones / max_iter))**2 
     for j in range(len(raices) + 1):
         idx_color = j % len(colores_base)
         mascara = (matriz_destinos == j)
