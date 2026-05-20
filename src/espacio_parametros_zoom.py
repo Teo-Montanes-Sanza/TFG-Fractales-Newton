@@ -54,7 +54,7 @@ def espacio_parametros_newton_granular(resolucion=1500, max_iter=150, tolerancia
         mascara = (matriz_destinos == j)
         color = colores_rgb[j]
         
-        factor_luz = (0.15 + 0.85 * sombreado[mascara])[:, np.newaxis]
+        factor_luz = (0.2 + 0.8 * sombreado[mascara])[:, np.newaxis]
         imagen_rgb[mascara] = color * factor_luz
         
     return imagen_rgb, (a_min, a_max, a_im_min, a_im_max)
