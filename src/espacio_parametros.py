@@ -48,7 +48,7 @@ def espacio_parametros_newton_granular(resolucion=1500, max_iter=60, tolerancia=
     colores_rgb = np.array([mcolors.to_rgb(c) for c in colores_base])
     imagen_rgb = np.zeros((resolucion, resolucion, 3))
 
-    sombreado = 1.0 - (matriz_iteraciones / max_iter)
+    sombreado = (1.0 - (matriz_iteraciones / max_iter))**2
     
     for j in range(1, 4):
         mascara = (matriz_destinos == j)
