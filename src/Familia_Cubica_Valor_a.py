@@ -45,7 +45,7 @@ def calcular_fractal_newton_granular(a_val, x_min, x_max, y_min, y_max, resoluci
     matriz_destinos[np.abs(Z - a_val) < 1e-1] = 3 
     
     imagen_rgb = np.zeros((resolucion, resolucion, 3))
-    sombreado = 1.0 - (matriz_iteraciones / max_iter)
+    sombreado = (1.0 - (matriz_iteraciones / max_iter))**2
     
     for j in range(1, 4):
         mascara = (matriz_destinos == j)
@@ -139,7 +139,7 @@ def accion_guardar(event):
     plt.pause(0.1)
     
     xi, xf, yi, yf = current_limites
-    nombre_archivo = f"Fam_Cúbica_Plano_Dim_a_{current_a.real}_{current_a.imag}{estado_camara}.png"
+    nombre_archivo = f"Fam_Cubica_Plano_Dim_a_{current_a.real}_{current_a.imag}{estado_camara}.png"
     
     fig_save, ax_save = plt.subplots(figsize=(8, 8), dpi=300)
     ax_save.imshow(current_matriz, extent=[xi, xf, yi, yf], origin='lower')
