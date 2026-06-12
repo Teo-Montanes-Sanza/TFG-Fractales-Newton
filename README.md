@@ -1,5 +1,5 @@
 # TFG-Fractales-Newton
-Este repositorio contiene los códigos y herramientas interactivas para el estudio de la dinámica compleja y fractales empleados en mi Trabajo de Fin de Grado de Matemática Computacional.
+Este repositorio contiene los códigos y herramientas interactivas para el estudio de la dinámica compleja y fractales empleados en mi Trabajo de Fin de Grado en Matemática Computacional.
 
 ## 📁 Estructura del Proyecto
 
